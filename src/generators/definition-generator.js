@@ -1,7 +1,7 @@
 const api = {
 
   generateDefinition(definition) {
-    return Promise.resolve();
+    return 'definition';
   },
 
 };

@@ -1,7 +1,7 @@
 const api = {
 
   generateApiIntro(swagger_spec) {
-    return Promise.resolve();
+    return 'intro';
   },
 
 };
