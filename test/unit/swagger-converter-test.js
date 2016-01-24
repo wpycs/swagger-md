@@ -7,17 +7,15 @@ describe('test/unit/swagger-converter-test.js', () => {
 
     describe('with a valid, parsed Swagger spec', () => {
       let swagger_api_spec;
+      let swagger_api_md_str;
 
       beforeEach(() => {
         swagger_api_spec = fixtures.loadSwaggerSpec();
-      });
-
-      it('should fulfill promise after conversion', () => {
-        return converter.convertToMarkdown(swagger_api_spec).should.be.fulfilled();
+        swagger_api_md_str = fixtures.loadSwaggerSpecMarkdown();
       });
 
       it('should return contents of a valid .md file', () => {
-        return converter.convertToMarkdown(swagger_api_spec).should.be.fulfilled();
+        return converter.convertToMarkdown(swagger_api_spec).should.be.fulfilledWith(swagger_api_md_str);
       });
 
     });
