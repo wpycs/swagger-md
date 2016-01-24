@@ -4,9 +4,6 @@ Base URL: http://petstore.swagger.io/api
 ## Contact
 Swagger API Team (http://swagger.io)
 
-## License
-Creative Commons 4.0 International: http://creativecommons.org/licenses/by/4.0/
-
 ## Endpoints
 
 #### `GET /pets`
