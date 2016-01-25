@@ -20,13 +20,11 @@ pet response
 
 **Schema**
 
-| Name | Type | Required |
-| --- | --- | --- |
-| - | array | Yes |
-| . | object | Yes |
-| .id | integer (int64) | Yes |
-| .name | string | Yes |
-| .tag | string | No |
+- (array)
+  - Pet (object)
+    - id (integer, int64)
+    - name (string)
+    - tag (string) (optional)
 
 
 ##### Response: `default`
@@ -34,11 +32,9 @@ unexpected error
 
 **Schema**
 
-| Name | Type | Required |
-| --- | --- | --- |
-| - | object | Yes |
-| code | integer (int62) | Yes |
-| message | string | Yes |
+- (object)
+  - code (integer, int64)
+  - message (string)
 
 ## Definitions
 
@@ -46,9 +42,7 @@ unexpected error
 
 **Schema**
 
-| Name | Type | Required |
-| --- | --- | --- |
-| . | object | Yes |
-| .id | integer (int64) | Yes |
-| .name | string | Yes |
-| .tag | string | No |
+- (object)
+  - id (integer, int64)
+  - name (string)
+  - tag (string) (optional)
