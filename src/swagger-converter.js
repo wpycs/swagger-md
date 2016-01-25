@@ -11,7 +11,7 @@ function convertPaths(paths) {
 
 function convertDefinitions(definitions) {
   return Object.keys(definitions).map(definition_key => {
-    return definition_generator.generateDefinition(definitions[definition_key]);
+    return definition_generator.generateDefinition(definition_key, definitions[definition_key]);
   });
 }
 

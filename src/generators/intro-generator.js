@@ -1,5 +1,3 @@
-const delimiter = '\n\n';
-
 const api = {
 
   generateApiIntro(swagger_spec) {
@@ -11,7 +9,7 @@ const api = {
       header,
       base_url,
       contact,
-    ].join(delimiter);
+    ].join('\n\n');
   },
 
 };

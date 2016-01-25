@@ -39,3 +39,16 @@ unexpected error
 | - | object | Yes |
 | code | integer (int62) | Yes |
 | message | string | Yes |
+
+## Definitions
+
+### Pet
+
+**Schema**
+
+| Name | Type | Required |
+| --- | --- | --- |
+| . | object | Yes |
+| .id | integer (int64) | Yes |
+| .name | string | Yes |
+| .tag | string | No |
